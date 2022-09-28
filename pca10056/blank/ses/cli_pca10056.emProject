@@ -87,6 +87,8 @@
       <file file_name="../../../../../../components/libraries/experimental_section_vars/nrf_section_iter.c" />
       <file file_name="../../../../../../components/libraries/sortlist/nrf_sortlist.c" />
       <file file_name="../../../../../../components/libraries/strerror/nrf_strerror.c" />
+      <file file_name="../../../../../../components/softdevice/common/nrf_sdh.c" />
+      <file file_name="../../../../../../components/softdevice/common/nrf_sdh_soc.c" />
     </folder>
     <folder Name="nRF_Drivers">
       <file file_name="../../../../../../integration/nrfx/legacy/nrf_drv_clock.c" />
@@ -127,6 +129,27 @@
     <folder Name="UTF8/UTF16 converter">
       <file file_name="../../../../../../external/utf_converter/utf.c" />
     </folder>
+    <folder
+      Name="third_party/memfault-firmware-sdk"
+      exclude="cmake;components/http;examples;scripts;tests;atmel;cypress;dialog;emlib;esp8266_sdk;esp_idf;freertos;mynewt;nxp;particle;qp;s32sdk;stm32cube;templates;zephyr;nrf5_coredump_storage.c"
+      filter="*.c"
+      path="../../../third_party/memfault-firmware-sdk"
+      recurse="Yes" />
+    <configuration
+      Name="Debug"
+      arm_linker_search_path="$(SolutionDir)/../../../../../../modules/nrfx/mdk"
+      c_preprocessor_definitions="NRFX_RTC_ENABLED=1;NRFX_RTC2_ENABLED=1;HARDFAULT_HANDLER_ENABLED=0"
+      c_user_include_directories=".;../../../third_party/memfault-firmware-sdk/components/include;../../../memfault_port;../../../third_party/memfault-firmware-sdk/ports/include"
+      link_include_standard_libraries="Yes"
+      link_linker_script_file="../../../third_party/memfault-firmware-sdk/examples/nrf5/apps/memfault_demo_app/memfault_demo_app_nrf52.ld"
+      link_use_linker_script_file="No"
+      linker_additional_options="" />
+    <folder
+      Name="memfault_port"
+      exclude=""
+      filter="*.c"
+      path="../../../memfault_port"
+      recurse="Yes" />
   </project>
   <configuration
     Name="Release"
