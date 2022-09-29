@@ -1,3 +1,8 @@
+> NOTE: not currently functional. I stopped while trying to migrate over to
+> mimic what the `examples/nrf5` Makefile-based app is doing.
+
+---
+
 # nRF5 SDK Segger Embedded Studio Memfault Example
 
 This is an example project for Segger Embedded Studio and the nRF5 SDK,
