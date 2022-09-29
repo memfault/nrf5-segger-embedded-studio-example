@@ -24,12 +24,9 @@
   <ProjectSessionItem path="cli_pca10056"/>
   <ProjectSessionItem path="cli_pca10056;cli_pca10056"/>
   <ProjectSessionItem path="cli_pca10056;cli_pca10056;Application"/>
-  <ProjectSessionItem path="cli_pca10056;cli_pca10056;Board Definition"/>
-  <ProjectSessionItem path="cli_pca10056;cli_pca10056;Board Support"/>
   <ProjectSessionItem path="cli_pca10056;cli_pca10056;memfault_port"/>
   <ProjectSessionItem path="cli_pca10056;cli_pca10056;None"/>
-  <ProjectSessionItem path="cli_pca10056;cli_pca10056;nRF_Core"/>
-  <ProjectSessionItem path="cli_pca10056;cli_pca10056;nRF_Drivers"/>
+  <ProjectSessionItem path="cli_pca10056;cli_pca10056;nRF_Libraries"/>
  </Project>
  <Register1>
   <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="cli_pca10056" decimalNodes="" octalNodes="" unsignedNodes=""/>
@@ -62,21 +59,11 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="14" y="321" useTextEdit="1" path="../../../main.c" left="0" top="309" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="68" y="87" useTextEdit="1" path="../../../../../../external/segger_rtt/SEGGER_RTT_Syscalls_SES.c" left="0" top="87" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="25" y="469" useTextEdit="1" path="../../../../../../integration/nrfx/legacy/nrf_drv_uart.h" left="0" top="460" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="17" y="156" useTextEdit="1" path="../../../../../../modules/nrfx/drivers/src/nrfx_uarte.c" left="0" top="127" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="16" y="66" useTextEdit="1" path="../../../../../../components/boards/boards.h" left="0" top="48" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="29" y="93" useTextEdit="1" openedFrom="/home/noah/Downloads/nRF5_SDK_15.2.0_9412b96/components/boards/boards.h" path="../../../../../../components/boards/pca10056.h" left="0" top="74" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="312" useTextEdit="1" path="../../../demo_cli_cmds.c" left="0" top="294" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="9" y="7" useTextEdit="1" path="../../../third_party/memfault-firmware-sdk/components/core/src/arch_arm_cortex_m.c" left="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="34" y="20" useTextEdit="1" path="../../../third_party/memfault-firmware-sdk/components/include/memfault/config.h" left="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="61" useTextEdit="1" path="../../../third_party/memfault-firmware-sdk/ports/nrf5_sdk/nrf5_coredump_storage.c" left="0" top="53" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="42" y="27" useTextEdit="1" path="../../../third_party/memfault-firmware-sdk/ports/nrf5_sdk/resetreas_reboot_tracking.c" left="0" top="12" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="24" y="76" useTextEdit="1" path="../../../third_party/memfault-firmware-sdk/ports/nrf5_sdk/software_watchdog.c" left="0" top="47" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="46" y="34" useTextEdit="1" path="../../../third_party/memfault-firmware-sdk/ports/panics/src/memfault_platform_ram_backed_coredump.c" left="0" top="18" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="29" useTextEdit="1" path="../../../memfault_port/memfault_platform_config.h" left="0" top="16" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="16" y="77" useTextEdit="1" path="../../../memfault_port/memfault_platform_port.c" left="0" selected="1" top="66" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="21" y="449" useTextEdit="1" path="../../../../../../components/libraries/log/src/nrf_log_frontend.c" left="0" top="419" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="38" y="184" useTextEdit="1" openedFrom="/home/noah/Downloads/nRF5_SDK_15.2.0_9412b96/components/libraries/log/src/nrf_log_frontend.c" path="../../../../../../components/libraries/util/app_util_platform.h" left="0" top="164" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../../../../../components/libraries/util/app_util_platform.c" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../../../../../components/libraries/timer/experimental/app_timer2.c" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="33" useTextEdit="1" path="../../../main.c" left="0" selected="1" top="12" codecName="Default"/>
  </Files>
- <EMStudioWindow activeProject="cli_pca10056" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="/home/noah/Downloads/nRF5_SDK_15.2.0_9412b96/components/softdevice/common" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <EMStudioWindow activeProject="cli_pca10056" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="/home/noah/Downloads/nRF5_SDK_15.2.0_9412b96/components/softdevice/common" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>
