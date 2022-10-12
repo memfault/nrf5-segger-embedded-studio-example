@@ -24,10 +24,10 @@
   <ProjectSessionItem path="cli_pca10056"/>
   <ProjectSessionItem path="cli_pca10056;cli_pca10056"/>
   <ProjectSessionItem path="cli_pca10056;cli_pca10056;Application"/>
-  <ProjectSessionItem path="cli_pca10056;cli_pca10056;Board Definition"/>
-  <ProjectSessionItem path="cli_pca10056;cli_pca10056;nRF_Drivers"/>
   <ProjectSessionItem path="cli_pca10056;cli_pca10056;nRF_Libraries"/>
-  <ProjectSessionItem path="cli_pca10056;cli_pca10056;nRF_Segger_RTT"/>
+  <ProjectSessionItem path="cli_pca10056;cli_pca10056;third_party/memfault-firmware-sdk"/>
+  <ProjectSessionItem path="cli_pca10056;cli_pca10056;third_party/memfault-firmware-sdk;ports"/>
+  <ProjectSessionItem path="cli_pca10056;cli_pca10056;third_party/memfault-firmware-sdk;ports;nrf5_sdk"/>
  </Project>
  <Register1>
   <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="cli_pca10056" decimalNodes="" octalNodes="" unsignedNodes=""/>
@@ -60,13 +60,28 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="25" y="338" useTextEdit="1" path="../../../main.c" left="0" selected="1" top="309" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="9" y="23" useTextEdit="1" path="../../../main.c" left="0" top="23" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="68" y="87" useTextEdit="1" path="../../../../../../external/segger_rtt/SEGGER_RTT_Syscalls_SES.c" left="0" top="87" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="209" useTextEdit="1" openedFrom="/home/noah/Downloads/nRF5_SDK_15.2.0_9412b96/examples/peripheral/cli/main.c" path="../../../../../../integration/nrfx/legacy/nrf_drv_uart.h" left="0" top="322" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="209" useTextEdit="1" openedFrom="/home/noah/Downloads/nRF5_SDK_15.2.0_9412b96/examples/peripheral/cli/main.c" path="../../../../../../integration/nrfx/legacy/nrf_drv_uart.h" left="0" top="209" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="18" y="133" useTextEdit="1" path="../../../../../../modules/nrfx/drivers/src/nrfx_uarte.c" left="0" top="127" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="16" y="66" useTextEdit="1" path="../../../../../../components/boards/boards.h" left="0" top="48" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="29" y="93" useTextEdit="1" openedFrom="/home/noah/Downloads/nRF5_SDK_15.2.0_9412b96/components/boards/boards.h" path="../../../../../../components/boards/pca10056.h" left="0" top="74" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="14" y="144" useTextEdit="1" openedFrom="/home/noah/Downloads/nRF5_SDK_15.2.0_9412b96/examples/peripheral/cli/main.c" path="../../../../../../components/libraries/cli/nrf_cli.c" left="0" top="123" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="9" y="59" useTextEdit="1" path="../../../../../../components/libraries/util/app_util_platform.h" left="0" top="34" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="15" y="162" useTextEdit="1" openedFrom="/home/noah/Downloads/nRF5_SDK_15.2.0_9412b96/examples/peripheral/memfault-cli-example/cli.c" path="../../../third_party/memfault-firmware-sdk/examples/nrf5/apps/memfault_demo_app/third_party/memfault/sdk_overrides/app_error.h" left="0" top="137" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="38" y="29" useTextEdit="1" path="../../../third_party/memfault-firmware-sdk/components/include/memfault/config.h" left="0" top="2" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="38" y="57" useTextEdit="1" path="../../../../../../components/libraries/log/src/nrf_log_backend_uart.c" left="0" top="40" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="14" y="13" useTextEdit="1" path="../../../third_party/memfault-firmware-sdk/ports/nrf5_sdk/resetreas_reboot_tracking.c" left="0" top="3" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="6" y="67" useTextEdit="1" path="../../../third_party/memfault-firmware-sdk/ports/nrf5_sdk/software_watchdog.c" left="0" top="55" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="51" y="211" useTextEdit="1" path="../../../../../../components/softdevice/common/nrf_sdh.c" left="0" top="179" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="16" y="72" useTextEdit="1" openedFrom="/home/noah/Downloads/nRF5_SDK_15.2.0_9412b96/components/softdevice/common/nrf_sdh.h" path="../../../../../../components/libraries/util/sdk_errors.h" left="0" top="60" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="16" y="53" useTextEdit="1" openedFrom="/home/noah/Downloads/nRF5_SDK_15.2.0_9412b96/components/softdevice/common/nrf_sdh.c" path="../../../../../../components/softdevice/common/nrf_sdh.h" left="0" top="42" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="/home/noah/Downloads/nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_errors.h" path="../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_error.h" left="0" top="48" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="31" y="45" useTextEdit="1" path="../../../../../../components/libraries/util/nrf_assert.c" left="0" selected="1" top="25" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="4" y="514" useTextEdit="1" openedFrom="/home/noah/Downloads/nRF5_SDK_15.2.0_9412b96/examples/peripheral/memfault-cli-example/third_party/memfault-firmware-sdk/ports/nrf5_sdk/resetreas_reboot_tracking.c" path="../../../../../../components/softdevice/s140/headers/nrf_soc.h" left="0" top="497" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="6" y="59" useTextEdit="1" openedFrom="/home/noah/Downloads/nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/nrf_soc.h" path="../../../../../../components/softdevice/s140/headers/nrf_svc.h" left="0" top="36" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="12" y="46" useTextEdit="1" path="../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_soc.h" left="0" top="24" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="13" y="30" useTextEdit="1" path="../../../cli.c" left="0" top="0" codecName="Default"/>
  </Files>
- <EMStudioWindow activeProject="cli_pca10056" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <EMStudioWindow activeProject="cli_pca10056" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>
