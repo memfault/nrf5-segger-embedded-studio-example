@@ -60,7 +60,7 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="9" y="23" useTextEdit="1" path="../../../main.c" left="0" top="23" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="45" y="67" useTextEdit="1" path="../../../main.c" left="0" selected="1" top="47" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="68" y="87" useTextEdit="1" path="../../../../../../external/segger_rtt/SEGGER_RTT_Syscalls_SES.c" left="0" top="87" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="8" y="209" useTextEdit="1" openedFrom="/home/noah/Downloads/nRF5_SDK_15.2.0_9412b96/examples/peripheral/cli/main.c" path="../../../../../../integration/nrfx/legacy/nrf_drv_uart.h" left="0" top="209" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="18" y="133" useTextEdit="1" path="../../../../../../modules/nrfx/drivers/src/nrfx_uarte.c" left="0" top="127" codecName="Default"/>
@@ -77,7 +77,7 @@
   <SessionOpenFile windowGroup="DockEditLeft" x="16" y="72" useTextEdit="1" openedFrom="/home/noah/Downloads/nRF5_SDK_15.2.0_9412b96/components/softdevice/common/nrf_sdh.h" path="../../../../../../components/libraries/util/sdk_errors.h" left="0" top="60" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="16" y="53" useTextEdit="1" openedFrom="/home/noah/Downloads/nRF5_SDK_15.2.0_9412b96/components/softdevice/common/nrf_sdh.c" path="../../../../../../components/softdevice/common/nrf_sdh.h" left="0" top="42" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="/home/noah/Downloads/nRF5_SDK_15.2.0_9412b96/components/libraries/util/sdk_errors.h" path="../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_error.h" left="0" top="48" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="31" y="45" useTextEdit="1" path="../../../../../../components/libraries/util/nrf_assert.c" left="0" selected="1" top="25" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="27" y="50" useTextEdit="1" path="../../../../../../components/libraries/util/nrf_assert.c" left="0" top="25" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="4" y="514" useTextEdit="1" openedFrom="/home/noah/Downloads/nRF5_SDK_15.2.0_9412b96/examples/peripheral/memfault-cli-example/third_party/memfault-firmware-sdk/ports/nrf5_sdk/resetreas_reboot_tracking.c" path="../../../../../../components/softdevice/s140/headers/nrf_soc.h" left="0" top="497" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="6" y="59" useTextEdit="1" openedFrom="/home/noah/Downloads/nRF5_SDK_15.2.0_9412b96/components/softdevice/s140/headers/nrf_soc.h" path="../../../../../../components/softdevice/s140/headers/nrf_svc.h" left="0" top="36" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="12" y="46" useTextEdit="1" path="../../../../../../components/drivers_nrf/nrf_soc_nosd/nrf_soc.h" left="0" top="24" codecName="Default"/>

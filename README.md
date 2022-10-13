@@ -17,7 +17,13 @@ targeting the nRF52480-DK ("pca10056") dev board.
       examples/peripheral/memfault-example
    ```
 
-3. open segger embedded studio and open the solution from
+3. disable the nRF5 SDK `app_error.h` file by renaming it:
+
+   ```bash
+   mv components/libraries/util/app_error.h{,.overriden}
+   ```
+
+4. open segger embedded studio and open the solution from
    `examples/peripheral/memfault-example/pca10056/blank/ses/cli_pca10056.emProject`
-4. build and flash to the nRF52480-DK
-5. open a serial terminal to the UART and run the demo commands
+5. build and flash to the nRF52480-DK
+6. use the built-in RTT terminal to execute the Memfault Demo CLI commands
