@@ -17,8 +17,8 @@
       arm_target_interface_type="SWD"
       c_additional_options="-Os"
       c_preprocessor_definitions="APP_TIMER_V2;APP_TIMER_V2_RTC1_ENABLED;BOARD_PCA10056;CONFIG_GPIO_AS_PINRESET;DEBUG;DEBUG_NRF;FLOAT_ABI_HARD;INITIALIZE_USER_SECTIONS;NO_VTOR_CONFIG;NRF52840_XXAA;NRF_SD_BLE_API_VERSION=6;S140;SOFTDEVICE_PRESENT=1;"
-      c_user_include_directories="../../../config;../../../../../../components;../../../../../../components/boards;../../../../../../components/drivers_nrf/usbd;../../../../../../components/libraries/atomic;../../../../../../components/libraries/atomic_fifo;../../../../../../components/libraries/balloc;../../../../../../components/libraries/bsp;../../../../../../components/libraries/button;../../../../../../components/libraries/cli;../../../../../../components/libraries/cli/cdc_acm;../../../../../../components/libraries/cli/rtt;../../../../../../components/libraries/cli/uart;../../../../../../components/libraries/crc16;../../../../../../components/libraries/delay;../../../../../../components/libraries/experimental_section_vars;../../../../../../components/libraries/fds;../../../../../../components/libraries/fstorage;../../../../../../components/libraries/hardfault;../../../../../../components/libraries/hardfault/nrf52;../../../../../../components/libraries/log;../../../../../../components/libraries/log/src;../../../../../../components/libraries/memobj;../../../../../../components/libraries/mpu;../../../../../../components/libraries/mutex;../../../../../../components/libraries/pwr_mgmt;../../../../../../components/libraries/queue;../../../../../../components/libraries/ringbuf;../../../../../../components/libraries/sortlist;../../../../../../components/libraries/stack_guard;../../../../../../components/libraries/strerror;../../../../../../components/libraries/timer;../../../../../../components/libraries/timer/experimental;../../../../../../components/libraries/usbd;../../../../../../components/libraries/usbd/class/cdc;../../../../../../components/libraries/usbd/class/cdc/acm;../../../../../../components/libraries/util;../../../../../../components/toolchain/cmsis/include;../../..;../../../../../../external/fnmatch;../../../../../../external/fprintf;../../../../../../external/segger_rtt;../../../../../../external/utf_converter;../../../../../../integration/nrfx;../../../../../../integration/nrfx/legacy;../../../../../../modules/nrfx;../../../../../../modules/nrfx/drivers/include;../../../../../../modules/nrfx/hal;../../../../../../modules/nrfx/mdk;../../../../../../components/softdevice/common;../../../../../../components/softdevice/s140/headers;../../../../../../components/softdevice/s140/headers/nrf52;../config;../../../third_party/memfault-firmware-sdk/examples/nrf5/apps/memfault_demo_app/third_party/memfault/sdk_overrides;../../../third_party/memfault-firmware-sdk/components/include;../../../memfault_port;../../../third_party/memfault-firmware-sdk/ports/include"
-      debug_register_definition_file="../../../../../../modules/nrfx/mdk/nrf52840.svd"
+      c_user_include_directories="../../../config;$(SDK_ROOT)/components;$(SDK_ROOT)/components/boards;$(SDK_ROOT)/components/drivers_nrf/usbd;$(SDK_ROOT)/components/libraries/atomic;$(SDK_ROOT)/components/libraries/atomic_fifo;$(SDK_ROOT)/components/libraries/balloc;$(SDK_ROOT)/components/libraries/bsp;$(SDK_ROOT)/components/libraries/button;$(SDK_ROOT)/components/libraries/cli;$(SDK_ROOT)/components/libraries/cli/cdc_acm;$(SDK_ROOT)/components/libraries/cli/rtt;$(SDK_ROOT)/components/libraries/cli/uart;$(SDK_ROOT)/components/libraries/crc16;$(SDK_ROOT)/components/libraries/delay;$(SDK_ROOT)/components/libraries/experimental_section_vars;$(SDK_ROOT)/components/libraries/fds;$(SDK_ROOT)/components/libraries/fstorage;$(SDK_ROOT)/components/libraries/hardfault;$(SDK_ROOT)/components/libraries/hardfault/nrf52;$(SDK_ROOT)/components/libraries/log;$(SDK_ROOT)/components/libraries/log/src;$(SDK_ROOT)/components/libraries/memobj;$(SDK_ROOT)/components/libraries/mpu;$(SDK_ROOT)/components/libraries/mutex;$(SDK_ROOT)/components/libraries/pwr_mgmt;$(SDK_ROOT)/components/libraries/queue;$(SDK_ROOT)/components/libraries/ringbuf;$(SDK_ROOT)/components/libraries/sortlist;$(SDK_ROOT)/components/libraries/stack_guard;$(SDK_ROOT)/components/libraries/strerror;$(SDK_ROOT)/components/libraries/timer;$(SDK_ROOT)/components/libraries/timer/experimental;$(SDK_ROOT)/components/libraries/usbd;$(SDK_ROOT)/components/libraries/usbd/class/cdc;$(SDK_ROOT)/components/libraries/usbd/class/cdc/acm;$(SDK_ROOT)/components/libraries/util;$(SDK_ROOT)/components/toolchain/cmsis/include;../../..;$(SDK_ROOT)/external/fnmatch;$(SDK_ROOT)/external/fprintf;$(SDK_ROOT)/external/segger_rtt;$(SDK_ROOT)/external/utf_converter;$(SDK_ROOT)/integration/nrfx;$(SDK_ROOT)/integration/nrfx/legacy;$(SDK_ROOT)/modules/nrfx;$(SDK_ROOT)/modules/nrfx/drivers/include;$(SDK_ROOT)/modules/nrfx/hal;$(SDK_ROOT)/modules/nrfx/mdk;$(SDK_ROOT)/components/softdevice/common;$(SDK_ROOT)/components/softdevice/s140/headers;$(SDK_ROOT)/components/softdevice/s140/headers/nrf52;../config;../../../third_party/memfault-firmware-sdk/examples/nrf5/apps/memfault_demo_app/third_party/memfault/sdk_overrides;../../../third_party/memfault-firmware-sdk/components/include;../../../memfault_port;../../../third_party/memfault-firmware-sdk/ports/include"
+      debug_register_definition_file="$(SDK_ROOT)/modules/nrfx/mdk/nrf52840.svd"
       debug_start_from_entry_point_symbol="No"
       debug_target_connection="J-Link"
       gcc_debugging_level="Level 3"
@@ -30,15 +30,15 @@
       linker_section_placement_file="flash_placement.xml"
       linker_section_placement_macros="FLASH_PH_START=0x0;FLASH_PH_SIZE=0x100000;RAM_PH_START=0x20000000;RAM_PH_SIZE=0x40000;FLASH_START=0x0;FLASH_SIZE=0x100000;RAM_START=0x20000000;RAM_SIZE=0x40000"
       linker_section_placements_segments="FLASH RX 0x0 0x100000;RAM RWX 0x20000000 0x40000"
-      macros="CMSIS_CONFIG_TOOL=../../../../../../external_tools/cmsisconfig/CMSIS_Configuration_Wizard.jar"
+      macros="CMSIS_CONFIG_TOOL=$(SDK_ROOT)/external_tools/cmsisconfig/CMSIS_Configuration_Wizard.jar"
       project_directory=""
       project_type="Executable" />
     <folder Name="Segger Startup Files">
       <file file_name="$(StudioDir)/source/thumb_crt0.s" />
     </folder>
     <folder Name="nRF_Core">
-      <file file_name="../../../../../../components/libraries/mpu/nrf_mpu.c" />
-      <file file_name="../../../../../../components/libraries/stack_guard/nrf_stack_guard.c" />
+      <file file_name="$(SDK_ROOT)/components/libraries/mpu/nrf_mpu.c" />
+      <file file_name="$(SDK_ROOT)/components/libraries/stack_guard/nrf_stack_guard.c" />
     </folder>
     <folder Name="nRF_Libraries">
       <file file_name="$(SDK_ROOT)/components/boards/boards.c" />
@@ -82,9 +82,9 @@
       <file file_name="../config/sdk_config.h" />
     </folder>
     <folder Name="None">
-      <file file_name="../../../../../../modules/nrfx/mdk/ses_startup_nrf52840.s" />
-      <file file_name="../../../../../../modules/nrfx/mdk/ses_startup_nrf_common.s" />
-      <file file_name="../../../../../../modules/nrfx/mdk/system_nrf52840.c" />
+      <file file_name="$(SDK_ROOT)/modules/nrfx/mdk/ses_startup_nrf52840.s" />
+      <file file_name="$(SDK_ROOT)/modules/nrfx/mdk/ses_startup_nrf_common.s" />
+      <file file_name="$(SDK_ROOT)/modules/nrfx/mdk/system_nrf52840.c" />
     </folder>
     <folder
       Name="third_party/memfault-firmware-sdk"
