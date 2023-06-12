@@ -31,7 +31,7 @@ Make sure the `SDK_ROOT` macro is set up in Segger Embedded Studio:
    ```
 
 4. Open segger embedded studio and open the solution from
-   `examples/peripheral/memfault-example/pca10056/blank/ses/cli_pca10056.emProject`
+   `<path_to_this_repo>/pca10056/blank/ses/cli_pca10056.emProject`
 
 5. Build and flash to the nRF52480-DK
 
