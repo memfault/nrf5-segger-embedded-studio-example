@@ -98,6 +98,10 @@
       filter="*.c"
       path="../../../memfault_port"
       recurse="Yes" />
+    <configuration
+      Name="Debug"
+      link_linker_script_file="$(ProjectDir)/cli_pca10056.ld"
+      link_use_linker_script_file="Yes" />
   </project>
   <configuration
     Name="Release"
