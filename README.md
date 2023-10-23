@@ -59,7 +59,7 @@ is as follows:
       ```xml
       <folder
       Name="third_party/memfault-firmware-sdk"
-      exclude="cmake;components/http;examples;scripts;tests;atmel;cypress;dialog;emlib;esp8266_sdk;esp_idf;freertos;mynewt;nxp;particle;qp;s32sdk;stm32cube;templates;zephyr;nrf5_coredump_storage.c"
+      exclude="cmake;components/http;examples;scripts;tests;atmel;cypress;dialog;emlib;esp8266_sdk;esp_idf;freertos;lwip;mbedtls;mynewt;nxp;particle;qp;s32sdk;stm32cube;templates;zephyr;nrf5_coredump_storage.c"
       filter="*.c"
       path="../../../third_party/memfault-firmware-sdk"
       recurse="Yes" />

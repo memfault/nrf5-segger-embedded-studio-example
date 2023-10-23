@@ -62,7 +62,9 @@
  <Files>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="../../../../../../Downloads/nRF5_SDK_15.2.0_9412b96/components/libraries/ringbuf/nrf_ringbuf.c" left="0" top="0" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" path="cli_pca10056.emProject" left="0" top="0" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="59" y="25" useTextEdit="1" path="../../../../../../Downloads/nRF5_SDK_15.2.0_9412b96/components/libraries/atomic_flags/nrf_atflags.c" left="0" selected="1" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="59" y="25" useTextEdit="1" path="../../../../../../Downloads/nRF5_SDK_15.2.0_9412b96/components/libraries/atomic_flags/nrf_atflags.c" left="20" top="11" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="9" y="5" useTextEdit="1" path="../../../third_party/memfault-firmware-sdk/ports/lwip/memfault_lwip_metrics.c" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="65" useTextEdit="1" path="../../../third_party/memfault-firmware-sdk/components/include/memfault/metrics/ids_impl.h" left="0" selected="1" top="55" codecName="Default"/>
  </Files>
  <EMStudioWindow activeProject="cli_pca10056" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>
