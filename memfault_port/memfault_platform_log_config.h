@@ -4,9 +4,10 @@
 //! See License.txt for details
 //!
 //! @brief
-//! An example implementation of overriding the Memfault logging macros by
-//! placing definitions in memfault_platform_log_config.h and adding
-//! -DMEMFAULT_PLATFORM_HAS_LOG_CONFIG=1 to the compiler flags
+//! This provides the necessary implementation for connecting Memfault log
+//! statements to the Nordic NRF5 SDK logging infrastructure. It's enabled by
+//! setting '#define MEMFAULT_PLATFORM_HAS_LOG_CONFIG 1' in
+//! memfault_platform_config.h.
 
 #pragma once
 

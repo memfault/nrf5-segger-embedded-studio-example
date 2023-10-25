@@ -107,3 +107,11 @@ is as follows:
       path="../../../memfault_port"
       recurse="Yes" />
    ```
+
+   Note that the
+   [`memfault_port/memfault_platform_log_config.h`](memfault_port/memfault_platform_log_config.h)
+   and
+   [`memfault_port/memfault_platform_config.h`](memfault_port/memfault_platform_config.h)
+   files contained **required** settings for successfully building the project,
+   be sure to copy them as-in into the target project (or review the settings
+   and make sure the necessary ones are included).
