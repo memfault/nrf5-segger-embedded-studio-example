@@ -65,7 +65,7 @@ is as follows:
    recurse="Yes" />
    ```
 
-### 3. Add the necessary search paths to the Preprocessor configuration
+### 2. Add the necessary search paths to the Preprocessor configuration
 
 ```plaintext
 ../../../third_party/memfault-firmware-sdk/examples/nrf5/apps/memfault_demo_app/third_party/memfault/sdk_overrides
@@ -74,7 +74,7 @@ is as follows:
 ../../../third_party/memfault-firmware-sdk/ports/include
 ```
 
-### 4. Modify the linker XML
+### 3. Modify the linker XML
 
 This is usually the `flash_placement.xml` file. It needs to include the
 following section for the Build ID:
@@ -85,7 +85,7 @@ following section for the Build ID:
  <ProgramSection alignment="4" keep="Yes" load="Yes" name=".note.gnu.build-id" inputsections="*(.note.gnu.build-id)" address_symbol="__start_gnu_build_id_start" end_symbol="__stop_gnu_build_id_stop" />
 ```
 
-### 5. Add the linker option for build id
+### 4. Add the linker option for build id
 
 Under project Options -> Code -> Linker -> Additional Linker Options, add
 `--build-id` on its own line. Example here for the `.emProject` file:
@@ -98,7 +98,7 @@ Under project Options -> Code -> Linker -> Additional Linker Options, add
       linker_additional_options="--build-id"
 ```
 
-### 6. Add the necessary memfault port files
+### 5. Add the necessary memfault port files
 
 In this example, they're added in the`memfault_port` folder as a virtual folder,
 which can be added through the UI, or by directly modifying the `.emProject`
@@ -120,3 +120,13 @@ and
 files contained **required** settings for successfully building the project,
 be sure to copy them as-in into the target project (or review the settings
 and make sure the necessary ones are included).
+
+### 6. Add the boot function to the application’s main() function:
+
+```c
+#include "memfault/components.h"
+...
+int main(void) {
+  memfault_platform_boot();
+...
+```
